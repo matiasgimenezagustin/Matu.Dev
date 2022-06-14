@@ -1,0 +1,21 @@
+.title{
+    color: var(--amarillo);
+    font-family: 'Anton', sans-serif;
+    font-size: 4rem;
+    margin-top: 15vh;
+}
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainIcon{
+    color: var(--amarillo);
+    font-size: 8rem;
+}
+.subTitle{
+    color: var(--amarillo);
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+}
