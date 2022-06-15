@@ -2,14 +2,6 @@
 
 
 
-nav{
-    background-color: var(--amarillo);
-    display: flex;
-    justify-content: flex-start;
-    height: 70px;
-    color: var(--negro);
-    font-family: 'Anton', sans-serif;
-}
 .iconNavbar{
     font-size: 2.5rem;
     align-self: center;
@@ -24,7 +16,7 @@ nav{
 /*buttons navbar css*/
 
 .buttons{
-    width: 20%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -111,52 +103,126 @@ input:checked + .slider:before {
     background-color: var(--amarillo);
     border-radius: 10px;
 }
-/* .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
 
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-.slider {
-    position: absolute;
+.navbar{
+    background-color: var(--amarillo);
+    display: flex;
+    justify-content: flex-start;
+    height: 70px;
+    color: var(--negro);
+    font-family: 'Anton', sans-serif;
+    min-height: 70px;
+    padding: 0 24px;
+  }
+  
+  .navMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .navBranding{
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+  
+  .navLink{
+    transition: .7s ease;
+  }
+  .navLink:hover{
+    color: pink;
+  }
+  .burger{
+    display: none;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--negro);
-    -webkit-transition: .4s;
-    transition: .4s;
+  }
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: .3s ease-in-out;
+  }
+  
+@media(max-width:768px){
+    input:checked + .slider span{
+        transform: translateX(13px);
+    }
+    input:checked + .slider:before {
+        transform: translateX(13px);
+    }
+    .iconContainer{
+        width: 2rem;
+    }
+
+    .iconBtn,  .iconContainer{
+        font-size: .9rem;
+    }
+    .slider{
+        width: 2.5rem;
+        height: 1.7rem;
+        top:4px;
+        border-radius: 5px;
+    }
+    .slider:before, .slider span{
+        width: 20px;
+        height: 19px;
+        border-radius: 5px;
+    }
+
+    .navbar{
+        padding: 10px;
+    }
+    .titleNavbar{
+        width: 40%;
+    }
+    .iconNavbar{
+        font-size: 2.5rem;
+        align-self: center;
+        justify-self: flex-start;
+        width: 100px;
+    }
+
+    .checkBox{
+        width: 1rem;
+    }
+    .burger{
+      display: block;
+      align-self: center;
+
+    }
+    .bar{
+        background-color: var(--negro);
+    }
+  
+    .burger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+      
+    }
+    .burger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .burger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu{
+        position: absolute;
+        top: -100%;
+        gap: 0;
+        left: 0;
+        flex-direction: column;
+        background-color: var(--amarillo);
+        width: 100%;
+        text-align: center;
+    }
+    
+  
+    .navItem{
+        margin: 16px 0;
+    }
+    .navMenu.active{
+        top: 70px;
+        transition: 1s ease;
+    }
 }
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: var(--amarillo);
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-.slider:checked {
-    background-color: var(--amarillo);
-}
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-.slider.round {
-    border-radius: 10px;
-}
-.slider.round:before {
-    border-radius: 30%;
-}
- */

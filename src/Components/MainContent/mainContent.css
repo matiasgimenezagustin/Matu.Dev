@@ -3,6 +3,7 @@
     font-family: 'Anton', sans-serif;
     font-size: 4rem;
     margin-top: 15vh;
+    text-align: center;
 }
 .mainContent{
     display: flex;
@@ -18,4 +19,13 @@
     color: var(--amarillo);
     font-family: 'Anton', sans-serif;
     font-size: 3rem;
+    text-align: center;
+}
+@media(max-width:768px){
+    .title{
+        font-size: 3rem;
+    }
+    .subTitle{
+        font-size: 2rem;
+    }
 }

@@ -5,10 +5,12 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { useContextProvider } from '../../Context/ContextProvider';
 
 
+
 const MainContent = () => {
 
-    const {lenguage} = useContextProvider;
-    console(lenguage)
+    const {lenguages} = useContextProvider();
+
+
     return (
         <main className='mainContent'>
             <h1 className='title'>

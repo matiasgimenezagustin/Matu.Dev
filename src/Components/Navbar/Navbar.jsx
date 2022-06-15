@@ -1,4 +1,5 @@
 import { useState, useEffect} from 'react';
+import { useContextProvider } from '../../Context/ContextProvider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faSun} from '@fortawesome/free-solid-svg-icons'; 
 
@@ -11,11 +12,22 @@ const Navbar = () => {
 
     const style = document.documentElement.style;
 
+    const burger = document.querySelector(".burger");
+    const navMenu = document.querySelector(".navMenu");
+
+
+    const droppdownMenu = () => {
+    burger.classList.toggle("active")
+    navMenu.classList.toggle("active")
+    onDown === false ? setOnDown(true) : setOnDown(false)
+}
+
 
     const [color, setColor] = useState(false);
     const [lenguage, setLenguage] = useState(false);
+    const [onDown, setOnDown] = useState(false)
     useEffect(() => {
-    }, [color, lenguage]);
+    }, [color, lenguage, onDown]);
 
     let colorNegro = '#000000';
     let colorAmarillo = '#FFEE33';
@@ -35,22 +47,24 @@ const Navbar = () => {
     }
 
     return (
-        <nav>
+
+   
+        <nav className='navbar'>
             <FontAwesomeIcon icon={faLaptopCode} className="iconNavbar"/>
-            <h2 className='titleNavbar'>Developer</h2>
-            <ul className='linksNavbarContainer'> 
-                <li>
-                    <a>
+            <h2 className='titleNavbar navBranding'>Developer</h2>
+            <ul className='linksNavbarContainer navMenu'> 
+                <li className='navItem'>
+                    <a className='navLink'>
                         Menu
                     </a>
                 </li>
-                <li>
-                    <a>
+                <li className='navItem'>
+                    <a className='navLink'>
                     {lenguage ? "Trabajos" : "Works"}
                     </a>
                 </li>
-                <li>
-                    <a>
+                <li className='navItem'>
+                    <a className='navLink'>
                     {lenguage ? "Contacto" : "Contact"}
                     </a>
                 </li>
@@ -58,20 +72,26 @@ const Navbar = () => {
             <div className='buttons'>
                 <label className='switch'>
                     <input type="checkbox" onClick={handleSwitchColor}/>
-                    <span class="slider">
+                    <span className="slider">
                         <span className='iconContainer'>
-                            <FontAwesomeIcon icon={faSun}/>
+                            <FontAwesomeIcon icon={faSun} className="iconBtn"/>
                         </span>
                     </span>
                 </label>
                 <label className='switch'>
                     <input type="checkbox" onClick={handleSwitchLenguage}/>
-                    <span class="slider">
+                    <span className='slider'>
                         <span className='iconContainer'>
+
                             {lenguage ? "Es" : "En"}
                         </span>
                     </span>
                 </label>
+            </div>
+            <div className="burger" onClick={droppdownMenu}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
             </div>
         </nav>
     );

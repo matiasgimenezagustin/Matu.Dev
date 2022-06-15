@@ -1,16 +1,22 @@
-import { Children, createContext, useContext, useState } from "react";
+import {  createContext, useContext, useState } from "react";
 
-export const createContext = createContext({});
-export const useContextProvider = () => useContext(createContext);
+export const ContextLeng = createContext({});
+export const useContextProvider = () => useContext(ContextLeng);
 
-const contextProvider = () =>{
-    const [lenguage, setLenguage] = useState();
+const ContextLengProvider = ({children}) =>{
+
+    const [lenguages, setLenguages] = useState(true);
+
+    lenguages === false ? 
+    setLenguages(false) : console.log("hola")
 
     return (
-        <contextProvider.Provider value={{
-            lenguage
+        <ContextLeng.Provider value={{
+            lenguages
         }}>
-            {Children}
-        </contextProvider.Provider>
+            {children}
+        </ContextLeng.Provider>
     )
+    
 }
+export default ContextLengProvider;
