@@ -5,14 +5,17 @@ export const useContextProvider = () => useContext(ContextLeng);
 
 const ContextLengProvider = ({children}) =>{
 
-    const [lenguages, setLenguages] = useState(true);
+    const [lenguages, setLenguages] = useState(false);
 
-    lenguages === false ? 
-    setLenguages(false) : console.log("hola")
+    const switchLenguage = (value) =>{
+        setLenguages(value)
+    }
+
 
     return (
         <ContextLeng.Provider value={{
-            lenguages
+            lenguages,
+            switchLenguage
         }}>
             {children}
         </ContextLeng.Provider>

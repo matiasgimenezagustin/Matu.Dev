@@ -8,7 +8,8 @@ import { useContextProvider } from '../../Context/ContextProvider';
 
 const MainContent = () => {
 
-    const {lenguages} = useContextProvider();
+    const {lenguages} = useContextProvider([]);
+
 
 
     return (
@@ -17,7 +18,7 @@ const MainContent = () => {
                 Matias Agustin Gimenez
             </h1>
             <FontAwesomeIcon icon={faCode} className="mainIcon" />
-            <h2 className='subTitle'>Front-End Developer</h2>
+            <h2 className='subTitle'>{lenguages  ? "Front-End Developer" : "Desarrollador Front-End"}</h2>
         </main>
     );
 }
