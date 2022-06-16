@@ -27,8 +27,8 @@ const Navbar = () => {
 
     let colorNegro = '#000000';
     let colorAmarillo = '#FFEE33';
-    let urlNegro = 'url("../../img/bg-negro.svg")';
-    let urlAmarillo = 'url("../../img/bg-amarillo.svg")';
+    let urlNegro = 'url(./img/bg-negro.svg)';
+    let urlAmarillo = 'url(./img/bg-amarillo.svg)';
 
     const droppdownMenu = () => {
         burger.classList.toggle("active");

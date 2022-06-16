@@ -1,0 +1,35 @@
+.presentation{
+    background-color: black;
+/*     background-color: rgb(36, 36, 36); */
+/*     background-color: #FFEE33; */
+    width: 90%;
+    margin: auto;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.presentationSubTitle{
+    border-radius: 5px;
+    font-family: 'Anton', sans-serif;
+    color: var(--negro);
+    background-color: rgb(54, 54, 51);
+    padding: 0 15px;
+
+}
+.presentationContent{
+    font-family: 'PT Sans', sans-serif;
+    color: var(--negro);
+    padding: 5px 10px;
+    font-size: 1.1rem;
+}
+.presentationInside{
+    background-color: rgb(36, 36, 36);
+    height: 100%;
+    border-radius: 10px;
+    padding: 5px;
+}
+@media(max-width:768px){
+    .presentation{
+        height: 280px;
+    }
+}

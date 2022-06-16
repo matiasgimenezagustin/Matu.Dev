@@ -10,6 +10,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vh;
+/*     background-image: url(https://grupored.com.mx/wp-content/uploads/2021/10/pexels-pixabay-270348.jpg); */
 }
 .mainIcon{
     color: var(--amarillo);

@@ -1,7 +1,6 @@
 :root {
   --amarillo: #FFEE33;
   --negro: #000000; 
-  --url: url("./img/bg-negro.svg")
 }
 *{
   padding: 0;
@@ -10,7 +9,6 @@
 }
 
 body{
-  background-image: var(--url);
   background-color: var(--negro);
 }
 
