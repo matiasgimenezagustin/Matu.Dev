@@ -1,0 +1,115 @@
+.subTitleW{
+    border-top: dashed 4px var(--amarillo);
+    padding-top: 20px;
+}
+.workSection{
+    background-color: rgb(36, 36, 36);
+    width: 55rem;
+    margin: auto;
+    border-radius: 10px;
+    padding: 15px 10px;
+    margin-bottom: 20vh;
+}
+.workTitleContainer{
+    grid-area: workTitle;
+    background-color: rgb(54, 54, 51);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.workTitle{
+    font-family: 'Anton', sans-serif;
+    color: #FFEE33;
+    font-size: 1.5rem;
+}
+.ytIframeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ytIframe{
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.workIcon{
+    width: 1rem;
+}
+.workIconContainer{
+    display: flex;
+    gap: 3px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.htmlIcon{
+    background-color: #E34C26;
+    width: 65px;
+}
+.cssIcon{
+    background-color: #1DA1F2;
+    width: 55px;
+}
+.reactIcon{
+    background-color: #7952B3;
+    width: 77px;
+}
+.jsIcon{
+    background-color: #F0DB4F;
+    width: 36px;
+}
+.workIconContainer span{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+.toolsSubtitle{
+    font-family: 'Anton', sans-serif;
+    color: #FFEE33;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-left: 30px;
+}
+.toolsContainer{
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    background-color: rgb(54, 54, 51);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+.btnWork {
+
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #212529;
+    background: rgb(54, 54, 51);
+}
+
+.btnWork:hover {
+    background: #fff;
+    color: #212529
+}
+@media(max-width:768px){
+    .workSection{
+        width: 20rem;
+    }
+    .toolsContainer{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .ytIframe{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

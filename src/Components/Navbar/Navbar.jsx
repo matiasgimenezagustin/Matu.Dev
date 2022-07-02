@@ -18,7 +18,7 @@ const Navbar = () => {
     const [lenguage, setLenguage] = useState(false);
     const [onDown, setOnDown] = useState(false);
     const {switchLenguage} = useContextProvider();
-    
+    const {switchThemes} = useContextProvider();
 
 
 
@@ -27,8 +27,8 @@ const Navbar = () => {
 
     let colorNegro = '#000000';
     let colorAmarillo = '#FFEE33';
-    let urlNegro = 'url(./img/bg-negro.svg)';
-    let urlAmarillo = 'url(./img/bg-amarillo.svg)';
+    let urlNegro = 'url(../../img/bg-negro.svg)';
+    let urlAmarillo = 'url(../../img/bg-amarillo.svg)';
 
     const droppdownMenu = () => {
         burger.classList.toggle("active");
@@ -43,7 +43,7 @@ const Navbar = () => {
         style.setProperty("--negro", negro);
     }
     const handleSwitchColor = () =>{
-        color === false ? (switchTheme(colorNegro, colorAmarillo, urlNegro)||(setColor(true))) : (switchTheme(colorAmarillo,colorNegro, urlAmarillo)||(setColor(false)))
+        color === false ? (switchTheme(colorNegro, colorAmarillo, urlNegro)||(setColor(true))||(switchThemes(true))) : (switchTheme(colorAmarillo,colorNegro, urlAmarillo)||(setColor(false)||(switchThemes(false))))
     }
     const handleSwitchLenguage = () =>{
         lenguage === false ? setLenguage(true) : setLenguage(false);
