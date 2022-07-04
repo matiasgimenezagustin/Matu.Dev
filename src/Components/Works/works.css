@@ -1,20 +1,22 @@
 .subTitleW{
     border-top: dashed 4px var(--amarillo);
-    padding-top: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .workSection{
     background-color: rgb(36, 36, 36);
-    width: 55rem;
+    width: 70%;
     margin: auto;
     border-radius: 10px;
     padding: 15px 10px;
     margin-bottom: 20vh;
 }
+
 .workTitleContainer{
     grid-area: workTitle;
     background-color: rgb(54, 54, 51);
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 5px 30px;
 }
 .workTitle{
     font-family: 'Anton', sans-serif;
@@ -33,31 +35,14 @@
     margin-left: 20px;
     margin-right: 20px;
 }
-.workIcon{
-    width: 1rem;
-}
+
 .workIconContainer{
     display: flex;
     gap: 3px;
-    padding: 2px;
+    padding: 5px;
     border-radius: 5px;
 }
-.htmlIcon{
-    background-color: #E34C26;
-    width: 65px;
-}
-.cssIcon{
-    background-color: #1DA1F2;
-    width: 55px;
-}
-.reactIcon{
-    background-color: #7952B3;
-    width: 77px;
-}
-.jsIcon{
-    background-color: #F0DB4F;
-    width: 36px;
-}
+
 .workIconContainer span{
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
@@ -68,7 +53,7 @@
     font-family: 'Anton', sans-serif;
     color: #FFEE33;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-left: 30px;
 }
 .toolsContainer{
@@ -81,10 +66,10 @@
     
 }
 .btnWork {
+    font-size: 1.1rem;
 
-    height: 40px;
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -102,7 +87,7 @@
 }
 @media(max-width:768px){
     .workSection{
-        width: 20rem;
+        width: 90%;
     }
     .toolsContainer{
         flex-direction: column;
@@ -111,5 +96,8 @@
     .ytIframe{
         margin-left: 5px;
         margin-right: 5px;
+    }
+    .btnWork{
+        padding: 10px;
     }
 }

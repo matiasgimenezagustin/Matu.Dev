@@ -1,0 +1,30 @@
+
+/* etiquetas de herramientras dev */
+.htmlIcon{
+    background-color: #E34C26;
+}
+.cssIcon{
+    background-color: #1DA1F2;
+}
+.reactIcon{
+    background-color: #7952B3;
+}
+.jsIcon{
+    background-color: #F0DB4F;
+}
+.bootstrapIcon{
+    background-color: #563D7C;
+}
+
+/* contenedor de etiqueta de herramientas dev  */
+.workIconContainer{
+    transition: all 0.5s;
+}
+.workIconContainer:hover{
+    transform: scale(0.98);
+}
+
+/* imagen de herramienta dev */
+.workIcon{
+    width: 1rem;
+}

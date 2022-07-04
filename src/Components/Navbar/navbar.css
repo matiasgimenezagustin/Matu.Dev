@@ -130,7 +130,7 @@ input:checked + .slider:before {
     transition: .7s ease;
   }
   .navLink:hover{
-    color: pink;
+    color: white;
   }
   .burger{
     display: none;
