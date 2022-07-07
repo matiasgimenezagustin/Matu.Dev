@@ -2,13 +2,9 @@ import { useState } from 'react';
 import "./works.css"
 import { useContextProvider} from '../../Context/ContextProvider';
 import Tool from '../ToolsIcon/ToolsIcon';
-
-import html5Icon from "../../img/icons-tools/html5-icon.svg"
-import css3Icon from "../../img/icons-tools/css3-icon.svg"
-import jsIcon from "../../img/icons-tools/js-icon.svg"
-import reactIcon from "../../img/icons-tools/react-icon.svg"
+import Fade from 'react-reveal/Fade';
 function Works() {
-    const {theme, lenguages} = useContextProvider({})
+    const { lenguages} = useContextProvider({})
     const [work, setWork] = useState(0)
     const handleChangeWorkAdd = () =>{
         work === 2 ? setWork(2) : (setWork(work + 1))
@@ -49,7 +45,7 @@ function Works() {
             </div>
             <div className='ytIframeContainer'>
                 <button className='btnWork left' onClick={handleChangeWorkSubtract}>{"<"}</button>
-                <iframe width="560" height="415" className='ytIframe' src="https://www.youtube.com/embed/pf8zcBXixSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="415" className='ytIframe' src="https://www.youtube.com/embed/pf8zcBXixSw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 <button className='btnWork rigth' onClick={handleChangeWorkAdd}>{">"}</button>
             </div>
             <div className='toolsContainer'>
@@ -66,7 +62,7 @@ function Works() {
             </div>
             <div className='ytIframeContainer'>
                 <button className='btnWork left' onClick={handleChangeWorkSubtract}>{"<"}</button>
-                <iframe width="560" height="415" className='ytIframe' src="https://www.youtube.com/embed/uZpUw16BWfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="415" className='ytIframe' src="https://www.youtube.com/embed/uZpUw16BWfQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 <button className='btnWork rigth' onClick={handleChangeWorkAdd}>{">"}</button>
             </div>
             <div className='toolsContainer'>
@@ -78,13 +74,14 @@ function Works() {
         </section>;
 
     return (
-        <div className='worksContainer'>
-            <h2 className='subTitle subTitleW'>{lenguages ? "Works" : "Trabajos"}</h2>
-            {
-                work === 0 ? WORK0 : (work === 1 ?  WORK1 : WORK2)
-            }
-        </div>
-        
+        <Fade right>
+            <div className='worksContainer'>
+                <h2 className='subTitle subTitleW'>{lenguages ? "Works" : "Trabajos"}</h2>
+                {
+                    work === 0 ? WORK0 : (work === 1 ?  WORK1 : WORK2)
+                }
+            </div>
+        </Fade>
     );
 }
 

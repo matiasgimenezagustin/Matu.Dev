@@ -86,7 +86,6 @@ const Navbar = () => {
                     <input type="checkbox" onClick={handleSwitchLenguage}/>
                     <span className='slider'>
                         <span className='iconContainer'>
-
                             {lenguage ? "Es" : "En"}
                         </span>
                     </span>

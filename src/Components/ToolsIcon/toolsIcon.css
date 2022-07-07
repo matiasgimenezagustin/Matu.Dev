@@ -2,18 +2,23 @@
 /* etiquetas de herramientras dev */
 .htmlIcon{
     background-color: #E34C26;
+    width: fit-content;
 }
 .cssIcon{
     background-color: #1DA1F2;
+    width: fit-content;
 }
 .reactIcon{
     background-color: #7952B3;
+    width: fit-content;
 }
 .jsIcon{
     background-color: #F0DB4F;
+    width: fit-content;
 }
 .bootstrapIcon{
     background-color: #563D7C;
+    width: fit-content;
 }
 
 /* contenedor de etiqueta de herramientas dev  */

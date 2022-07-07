@@ -1,0 +1,118 @@
+.presentationContainer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Anton', sans-serif;
+    gap: 10vh;
+    margin-bottom: 20vh;
+}
+
+.imgPresentation{
+    width: 25%;
+    margin-left: 5vh;
+}
+.presentationAll2{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2vh;
+}
+.presentationAll1{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2vh;
+}
+.drFront{
+    position: relative;
+    bottom: 90px;
+    width: 30%;
+}
+.subtitlePresentation{
+    border-top: dashed 4px var(--amarillo);
+    padding-top: 60px;
+
+}
+.presentationInsideTitle{
+    color: #FFEE33;
+    font-weight: 100;
+    padding: 10px;
+    width: 90%;
+    background-color: rgb(54, 54, 51);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.presentation{
+    padding: 10px;
+}
+.presentationContent{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    color:white;
+    padding: 10px;
+}
+.one{
+    background-color: #212529;
+    width: 55%;
+    height: 20rem;
+    border-end-end-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.two{
+    background-color: #212529;
+    width: 55%;
+    height: 20rem;
+    align-self: flex-end;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.three{
+    background-color: #212529;
+    width: 55%;
+    height: 20rem;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.linkC{
+    color: gold;
+}
+@media(max-width:768px){
+    .drFront{
+        align-self: center;
+        bottom: 0;
+        width: 70%;
+        margin-top: 10vh;
+    }
+    .presentationContent{
+        font-size: 1rem;
+    }
+    .one {
+        width: 90%;
+        align-self: center;
+        border-radius: 10px;
+        height: fit-content;
+    }
+    .two{
+        width: 90%;
+        align-self: center;
+        border-radius: 10px;
+    }
+
+    .three{
+        width: 90%;
+        align-self: center;
+        border-radius: 10px;
+        height: fit-content;
+    }
+    .presentationAll1{
+        flex-direction: column;
+    }
+    .presentationAll2{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgPresentation{
+        width: 70%;
+        margin: 0;
+        margin-top: 10vh;
+
+    }
+}

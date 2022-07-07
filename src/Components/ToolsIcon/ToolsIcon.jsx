@@ -5,12 +5,14 @@ import jsIcon from "../../img/icons-tools/js-icon.svg"
 import reactIcon from "../../img/icons-tools/react-icon.svg"
 import bootstrapIcon from "../../img/icons-tools/bootstrap-icon.svg"
 import "./toolsIcon.css"
-function Tool(props) {
+
+
+const Tool = (props) => {
 
     let iconSelect;
     let txtSelect;
 
-
+//recibe por props una opcion de Tool
     switch(props.tool){
 
         case "htmlIcon":
