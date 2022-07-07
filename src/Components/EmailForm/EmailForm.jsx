@@ -32,7 +32,7 @@ const EmailForm = () => {
     return (
         <div className="emailContainer">
             <Fade left>
-                <h3 className="subTitle subTitleEmail">
+                <h3 className="subTitle subTitleEmail" id="contact">
                     {lenguages ? "Contact me" : "Contactame"}
                 </h3>
                 {formulario}

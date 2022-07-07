@@ -75,7 +75,7 @@ function Works() {
 
     return (
         <Fade right>
-            <div className='worksContainer'>
+            <div className='worksContainer' id="work">
                 <h2 className='subTitle subTitleW'>{lenguages ? "Works" : "Trabajos"}</h2>
                 {
                     work === 0 ? WORK0 : (work === 1 ?  WORK1 : WORK2)

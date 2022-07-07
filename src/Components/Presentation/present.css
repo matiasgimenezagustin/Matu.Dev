@@ -52,12 +52,14 @@
     background-color: #212529;
     width: 55%;
     height: 20rem;
+    height: fit-content;
     border-end-end-radius: 20px;
     border-top-right-radius: 20px;
 }
 .two{
     background-color: #212529;
     width: 55%;
+    height: fit-content;
     height: 20rem;
     align-self: flex-end;
     border-top-left-radius: 20px;
@@ -66,6 +68,7 @@
 .three{
     background-color: #212529;
     width: 55%;
+    height: fit-content;
     height: 20rem;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;

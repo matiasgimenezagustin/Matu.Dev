@@ -58,17 +58,17 @@ const Navbar = () => {
             <h2 className='titleNavbar navBranding'>Developer</h2>
             <ul className='linksNavbarContainer navMenu'> 
                 <li className='navItem'>
-                    <a className='navLink'>
+                    <a className='navLink' href='#menu' >
                         Menu
                     </a>
                 </li>
                 <li className='navItem'>
-                    <a className='navLink'>
+                    <a className='navLink' href='#work'>
                     {lenguage ? "Trabajos" : "Works"}
                     </a>
                 </li>
                 <li className='navItem'>
-                    <a className='navLink'>
+                    <a className='navLink' href='#contact'>
                     {lenguage ? "Contacto" : "Contact"}
                     </a>
                 </li>

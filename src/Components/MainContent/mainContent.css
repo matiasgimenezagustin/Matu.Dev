@@ -4,6 +4,7 @@
     font-size: 4rem;
     margin-top: 15vh;
     text-align: center;
+    z-index: 2;
 }
 .mainContent{
     display: flex;

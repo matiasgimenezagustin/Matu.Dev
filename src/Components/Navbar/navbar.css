@@ -104,6 +104,10 @@ input:checked + .slider:before {
     color: var(--negro);
     border-radius: 10px;
 }
+.navItem a{
+    color: var(--negro);
+    text-decoration: none;
+}
 
 .navbar{
     background-color: var(--amarillo);
@@ -114,6 +118,7 @@ input:checked + .slider:before {
     font-family: 'Anton', sans-serif;
     min-height: 70px;
     padding: 0 24px;
+    z-index: 9;
   }
   
   .navMenu{

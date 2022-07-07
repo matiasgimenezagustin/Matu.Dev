@@ -11,13 +11,13 @@ const Presentation = () => {
 
     return (
         
-        <div className='presentationContainer'>
+        <div className='presentationContainer' >
             <h2 className='subTitle subtitlePresentation'>{lenguages ? "Menu" : "Inicio"}</h2>
             <div className='presentationAll1'>
                 <Fade left>
                     <section className='presentation one'>
                         <div className='presentationInside'>
-                            <h2 className='presentationInsideTitle'>
+                            <h2 className='presentationInsideTitle' id="menu">
                                 {
                                 lenguages ?
                                 "About me :"
