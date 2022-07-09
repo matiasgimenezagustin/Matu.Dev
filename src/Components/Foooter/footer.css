@@ -4,11 +4,20 @@
     align-items: center;
     justify-content: space-around;
     height: 60px;
+    margin-top: 20vh;
 }
-.footer img{
+.footer a img{
     width: 2rem;
 }
 .footer h4{
     font-family: 'Anton', sans-serif;
     color: var(--negro);
+}
+@media(max-width:768px){
+    .footer{
+        height: 50px;
+    }
+    .footer a img{
+        width: 1.7rem;
+    }
 }
