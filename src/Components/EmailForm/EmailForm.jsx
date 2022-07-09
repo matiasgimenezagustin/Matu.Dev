@@ -20,20 +20,21 @@ const EmailForm = () => {
     }
     const formulario = 
         <form action=""  id="form" onSubmit={sendEmail} className="form">
-            <label  for="name">{lenguages ? "Full name:" : "Nombre completo:"}</label>
-            <input className="inputForm" type="text" name="name" />
-            <label>{lenguages ? "Email:" : "Correo electronico:"}</label>
-            <input className="inputForm" type="text" name="email" />
-            <label>{lenguages ? "Message" : "Mensaje:"}</label>
-            <textarea className="inputForm" name="message" id="" cols="30" rows="10"></textarea>
-            {loader ? <p className="sent">{ lenguages ? "Sent✅" : "Enviado✅" }</p> : <input className="inputForm submit" type="submit" />}
+            <h4 className="titleEmailForm">{lenguages ? "Contactame por Email" : "Send me a Email"}</h4>
+            <label className="labelForm"  for="name">{lenguages ? "Nombre completo:" : "Full name:"}</label>
+            <input className="inputForm" type="text" name="name" required/>
+            <label className="labelForm">{lenguages ? "Correo electronico:" : "Email:"}</label>
+            <input className="inputForm" type="text" name="email" required/>
+            <label className="labelForm">{lenguages ? "Message" : "Mensaje:"}</label>
+            <textarea className="inputForm" name="message" id="" cols="30" rows="10" required></textarea>
+            {loader ? <p className="sent">{ lenguages ? "Enviado✅" :  "Sent✅"}</p> : <input className="inputForm submit" type="submit" value={lenguages ? "Enviar" : "Submit"} />}
         </form>;
 
     return (
         <div className="emailContainer">
             <Fade left>
                 <h3 className="subTitle subTitleEmail" id="contact">
-                    {lenguages ? "Contact me" : "Contactame"}
+                    {lenguages ? "Contactame" : "Contact me"}
                 </h3>
                 {formulario}
             </Fade>

@@ -4,7 +4,7 @@
     font-size: 4rem;
     margin-top: 15vh;
     text-align: center;
-    z-index: 2;
+
 }
 .mainContent{
     display: flex;
@@ -13,6 +13,7 @@
     align-items: center;
     margin-bottom: 10vh;
     gap: 10vh;
+    z-index: 2;
 }
 .mainIcon{
     color: var(--amarillo);

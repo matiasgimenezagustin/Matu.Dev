@@ -11,15 +11,22 @@
     padding-top: 10vh;
     margin-bottom: 10vh;
 }
+.titleEmailForm{
+    align-self: center;
+    color: #FFEE33;
+    font-size: 1.7rem;
+}
 label{
     font-size: 1.2rem;
     color: #FFEE33;
+    padding-left: 10vh;
 }
 .inputForm{
     font-family: 'PT Sans', sans-serif;
     font-size: 1rem;
     border-radius: 5px;
-
+    width: 80%;
+    align-self: center;
 }
 .submit {
     width: 6rem;
@@ -34,10 +41,10 @@ label{
     display: inline-block;
     outline: none;
     border-radius: 5px;
-    border: 2px solid #212529;
-    background: #212529;
+    border: 2px solid rgb(54, 54, 51);
+    background: rgb(54, 54, 51);
     margin-top: 3vh;
-
+    
   }
 .submit:hover {
     background: #fff;

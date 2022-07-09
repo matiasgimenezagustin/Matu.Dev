@@ -24,7 +24,7 @@ const MainContent = () => {
             </Animated>
             <FontAwesomeIcon icon={faCode} className="mainIcon" />
             <Fade right>
-                <h2 className='subTitle'>{lenguages  ? "Front-End Developer" : "Desarrollador Front-End"}</h2>
+                <h2 className='subTitle'>{lenguages  ? "Desarrollador Front-End" : "Front-End Developer"}</h2>
             </Fade>
         </main>
     );

@@ -20,7 +20,7 @@ function Works() {
     const WORK0 =
         <section className='workSection'>
             <div className="workTitleContainer">
-                <h3 className='workTitle'>{lenguages ? "React E-Commerce: Chill Store" : "E-Commerce en React: Chill Store"}</h3>
+                <h3 className='workTitle'>{lenguages ? "E-Commerce en React: Chill Store" : "React E-Commerce: Chill Store"}</h3>
             </div>
             <div className='ytIframeContainer'>
                 <button className='btnWork left' onClick={handleChangeWorkSubtract}>{"<"}</button>
@@ -29,7 +29,7 @@ function Works() {
             </div>
             <div className='workDescription'>
                 <div className='toolsContainer'>
-                    <h4 className='toolsSubtitle'>{lenguages ? "Tools: " : "Herramientas: "}</h4>
+                    <h4 className='toolsSubtitle'>{lenguages ? "Herramientas: " : "Tools:"}</h4>
                     <Tool tool="htmlIcon"/>
                     <Tool tool="cssIcon"/>
                     <Tool tool="reactIcon"/>
@@ -41,7 +41,7 @@ function Works() {
     const WORK1 =
         <section className='workSection'>
             <div className="workTitleContainer">
-                <h3 className='workTitle'>{lenguages ? "Freelance Proyect" : "Proyecto Freelance"}</h3>
+                <h3 className='workTitle'>{lenguages ? "Proyecto Freelance" : "Freelance Proyect"}</h3>
             </div>
             <div className='ytIframeContainer'>
                 <button className='btnWork left' onClick={handleChangeWorkSubtract}>{"<"}</button>
@@ -49,7 +49,7 @@ function Works() {
                 <button className='btnWork rigth' onClick={handleChangeWorkAdd}>{">"}</button>
             </div>
             <div className='toolsContainer'>
-                <h4 className='toolsSubtitle'>{lenguages ? "Tools: " : "Herramientas: "}</h4>
+                <h4 className='toolsSubtitle'>{lenguages ? "Herramientas: " : "Tools:"}</h4>
                 <Tool tool="htmlIcon"/>
                 <Tool tool="cssIcon"/>
                 <Tool tool="bootstrapIcon"/>
@@ -58,7 +58,7 @@ function Works() {
     const WORK2 = 
         <section className='workSection'>
             <div className="workTitleContainer">
-                <h3 className='workTitle'>{lenguages ? "Web Desing proyect: Flow Royale" : "Proyecto de diseño web: Flow Royale"}</h3>
+                <h3 className='workTitle'>{lenguages ? "Proyecto de diseño web: Flow Royale" : "Web Desing proyect: Flow Royale"}</h3>
             </div>
             <div className='ytIframeContainer'>
                 <button className='btnWork left' onClick={handleChangeWorkSubtract}>{"<"}</button>
@@ -66,7 +66,7 @@ function Works() {
                 <button className='btnWork rigth' onClick={handleChangeWorkAdd}>{">"}</button>
             </div>
             <div className='toolsContainer'>
-                <h4 className='toolsSubtitle'>{lenguages ? "Tools: " : "Herramientas: "}</h4>
+                <h4 className='toolsSubtitle'>{lenguages ? "Herramientas: " : "Tools:"}</h4>
                 <Tool tool="htmlIcon"/>
                 <Tool tool="cssIcon"/>
                 <Tool tool="bootstrapIcon"/>
@@ -76,7 +76,7 @@ function Works() {
     return (
         <Fade right>
             <div className='worksContainer' id="work">
-                <h2 className='subTitle subTitleW'>{lenguages ? "Works" : "Trabajos"}</h2>
+                <h2 className='subTitle subTitleW'>{lenguages ? "Trabajos" : "Works"}</h2>
                 {
                     work === 0 ? WORK0 : (work === 1 ?  WORK1 : WORK2)
                 }
